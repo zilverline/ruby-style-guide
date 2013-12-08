@@ -1557,6 +1557,7 @@ deindent access levels:
 
 [vim](https://github.com/vim-ruby/vim-ruby/blob/master/indent/ruby.vim#L18)
     ```
+    Bundle 'vim-ruby/vim-ruby'
     let g:ruby\_indent\_access\_modifier\_style = 'outdent'
     ```
 
