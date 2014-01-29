@@ -131,7 +131,9 @@ Translations of the guide are available in the following languages:
     puts 'foo', 'bar' # this applies to puts in particular
     ```
 
-* Prefer a single-line format for class definitions with no body.
+### Class definitions
+
+Prefer a single-line format for class definitions with no body.
 
     ```Ruby
     # bad
@@ -145,10 +147,12 @@ Translations of the guide are available in the following languages:
     FooError = Class.new(StandardError)
     ```
 
-* Avoid single-line methods. Although they are somewhat popular in the
-  wild, there are a few peculiarities about their definition syntax
-  that make their use undesirable. At any rate - there should be no more
-  than one expression in a single-line method.
+### Methods
+
+Avoid single-line methods. Although they are somewhat popular in the
+wild, there are a few peculiarities about their definition syntax
+that make their use undesirable. At any rate - there should be no more
+than one expression in a single-line method.
 
     ```Ruby
     # bad
@@ -176,10 +180,12 @@ Translations of the guide are available in the following languages:
     def no_op; end
     ```
 
-* Use spaces around operators, after commas, colons and semicolons, around `{`
-  and before `}`. Whitespace might be (mostly) irrelevant to the Ruby
-  interpreter, but its proper use is the key to writing easily
-  readable code.
+### Operators
+
+Use spaces around operators, after commas, colons and semicolons, around `{`
+and before `}`. Whitespace might be (mostly) irrelevant to the Ruby
+interpreter, but its proper use is the key to writing easily
+readable code.
 
     ```Ruby
     sum = 1 + 2
@@ -231,6 +237,8 @@ Translations of the guide are available in the following languages:
     (arguably) a bit more readable. As with hashes - pick one style
     and apply it consistently.
 
+#### Operator space exceptions
+
 * No spaces after `(`, `[` or before `]`, `)`.
 
     ```Ruby
@@ -248,7 +256,8 @@ Translations of the guide are available in the following languages:
     !something
     ```
 
-* Indent `when` as deep as `case`. I know that many would disagree
+### Case statements
+  Indent `when` as deep as `case`. I know that many would disagree
   with this one, but it's the style established in both "The Ruby
   Programming Language" and "Programming Ruby".
 
