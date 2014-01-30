@@ -306,7 +306,7 @@ readable code.
       calc_something_else
     end
 
-    # good - it's apparent what's going on
+    # bad - vertical aligning indent
     kind = case year
            when 1850..1889 then 'Blues'
            when 1890..1909 then 'Ragtime'
@@ -423,7 +423,7 @@ readable code.
           body: source.text)
     end
 
-    # good
+    # bad (vertical aligning indent)
     def send_mail(source)
       Mailer.deliver(to: 'bob@example.com',
                      from: 'us@example.com',
